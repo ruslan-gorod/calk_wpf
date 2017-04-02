@@ -1,0 +1,303 @@
+﻿<Window x:Class="Calk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Калькулятор"
+        Height="450" 
+        Width="350" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        WindowStyle = "None"
+        
+        Background = "Transparent" >
+   
+    
+    <Window.Resources>
+
+        <SolidColorBrush x:Key="myStyle" 
+                         Color="BlanchedAlmond" />
+
+        <LinearGradientBrush x:Key="gradientStyle" StartPoint="0.5,1" EndPoint="0.5,0">
+            <GradientStop Color="LightBlue" Offset="0" />
+            <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="redStyle" StartPoint="0.5,1" EndPoint="0.5,0">
+            <GradientStop Color="Red" Offset="0" />
+            <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="greenStyle" StartPoint="0.5,1" EndPoint="0.5,0">
+            <GradientStop Color="Green" Offset="0" />
+            <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="operStyle" StartPoint="0.5,1" EndPoint="0.5,0">
+            <GradientStop Color="GreenYellow" Offset="0" />
+            <GradientStop Color="White" Offset="1" />
+        </LinearGradientBrush>
+        
+      
+
+    </Window.Resources>
+    <Border CornerRadius="0,20,0,20" BorderThickness="5" BorderBrush="LightBlue" Background="LightBlue">
+        <Grid>
+
+           
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            <Border 
+                CornerRadius="0,25,0,25" 
+                BorderBrush="LightBlue" Margin="5"             
+                Grid.Row="0"
+                Grid.Column="0" 
+                Grid.ColumnSpan="2"
+                BorderThickness="5">
+                <TextBox 
+                    BorderThickness="0"
+                    Name="rezult"
+                    Foreground="Blue"
+                    Margin="5"
+                    Padding="5"
+                    FontSize="36"
+                    MaxLength="15"
+                    VerticalAlignment="Stretch"
+                    TextAlignment="Right"
+                    IsReadOnly="True"/>
+            </Border>
+            <StackPanel 
+            Grid.Row="1" 
+            Grid.Column="0" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+         
+            <Button 
+                Name="one"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="one_Click"
+                Content="1"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+                 
+            </Button>
+            <Button
+                Name="two"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="two_Click"
+                Content="2"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="three"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="three_Click"
+                Content="3"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+                
+        </StackPanel>
+        <StackPanel 
+            Grid.Row="2" 
+            Grid.Column="0" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="four"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="four_Click"
+                Content="4"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="five"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="five_Click"
+                Content="5"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="six"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="six_Click"
+                Content="6"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+        </StackPanel>
+        <StackPanel 
+            Grid.Row="3" 
+            Grid.Column="0" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="seven"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="seven_Click"
+                Content="7"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="eight"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="eight_Click"
+                Content="8"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="nine"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="nine_Click"
+                Content="9"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+        </StackPanel>
+        <StackPanel 
+            Grid.Row="4" 
+            Grid.Column="0" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="clear_but"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="clear_but_Click"
+                Content="C"
+                Background="{StaticResource redStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="zero"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="zero_Click"
+                Content="0"
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+            <Button
+                Name="koma"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="koma_Click"
+                Content=","
+                Background="{StaticResource gradientStyle}"
+                Template="{DynamicResource Button_round}">
+            </Button>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="1" 
+            Grid.Column="1" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="plus"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="plus_Click"
+                Content="+"
+                Background="{StaticResource operStyle}"
+                Template="{DynamicResource Button_oval}">
+            </Button>
+            <Button Name="minus"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="minus_Click"
+                Content="-"
+                Background="{StaticResource operStyle}"
+                Template="{DynamicResource Button_oval}">
+            </Button>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="2" 
+            Grid.Column="1" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="mnog"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="mnog_Click"
+                Content="*"
+                Background="{StaticResource operStyle}"
+                Template="{DynamicResource Button_oval}">
+            </Button>
+            <Button Name="dil"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="dil_Click"
+                Content="/"
+                Background="{StaticResource operStyle}"
+                Template="{DynamicResource Button_oval}">
+            </Button>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="3" 
+            Grid.Column="1" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="proc"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="proc_Click"
+                Content="%"
+                Background="{StaticResource operStyle}"
+                Template="{DynamicResource Button_oval}">
+            </Button>
+            <Button Name="znak"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Width="70"
+                Click="znak_Click"
+               Content="-/+"
+                Background="{StaticResource operStyle}"
+                Template="{DynamicResource Button_oval}">
+            </Button>
+        </StackPanel>
+        <StackPanel             
+            Grid.Row="4" 
+            Grid.Column="1" 
+            VerticalAlignment="Stretch" 
+            Orientation="Horizontal" >
+            <Button Name="rez"
+                HorizontalContentAlignment="Stretch" 
+                VerticalContentAlignment="Stretch"
+                Click="rez_Click"
+                Content="="
+                Background="{StaticResource greenStyle}"
+                Template="{DynamicResource Button_rectangle}">
+            </Button>
+        </StackPanel>
+            
+            <StackPanel Margin="1">
+                
+                <Button 
+                    HorizontalAlignment="Left" 
+                    Background="AliceBlue"
+                    Foreground="LightBlue"
+                    Click="Button_Click_Close">
+                    X
+                </Button>
+            </StackPanel>
+            
+
+        </Grid>
+    </Border>
+</Window>

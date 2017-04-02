@@ -1,0 +1,16 @@
+D:\Sience\IT_Step\WPF\Calk\bin\Debug\Calk.exe.config
+D:\Sience\IT_Step\WPF\Calk\bin\Debug\Calk.exe
+D:\Sience\IT_Step\WPF\Calk\bin\Debug\Calk.pdb
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk.csprojResolveAssemblyReference.cache
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\MainWindow.baml
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\MainWindow.g.cs
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\App.g.cs
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk_MarkupCompile.cache
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk.g.resources
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk.Properties.Resources.resources
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk.csproj.GenerateResource.Cache
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk.exe
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Calk.pdb
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\App.baml
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Window_rez.baml
+D:\Sience\IT_Step\WPF\Calk\obj\Debug\Window_rez.g.cs
